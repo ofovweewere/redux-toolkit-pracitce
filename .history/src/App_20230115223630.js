@@ -25,7 +25,7 @@ function App() {
     if (cart.changed) {
       dispatch(sendCartData(cart));
     }
-  }, [cart, dispatch]);
+  }, [cart]);
   return (
     <div className="App">
       {notification && (
