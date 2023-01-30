@@ -12,7 +12,8 @@ function App() {
   const notification = useSelector((state) => state.ui.notification);
   const cart = useSelector((state) => state.cart);
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
-
+  let obj = { name: "ultron" };
+  console.log(obj.stage);
   useEffect(() => {
     dispatch(fetchData());
   }, [dispatch]);
