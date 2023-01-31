@@ -12,7 +12,7 @@ export const fetchData = () => {
     };
     try {
       const cartData = await fetchHandler();
-
+      console.log(cartData);
       if (cartData) {
         dispatch(cartActions.replaceData(cartData));
       }
